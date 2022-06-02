@@ -2,7 +2,7 @@ import {createAsyncThunk, createSlice} from '@reduxjs/toolkit';
 import {ResultsType, TestResultsDataType} from '../../apiTypes';
 import {MAIN_URL} from '../constants';
 import {RootState} from './store';
-const axios = require('axios');
+import axios from 'axios';
 
 interface ApiState {
   tests?: TestResultsDataType[];
